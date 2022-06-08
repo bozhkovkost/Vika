@@ -1,0 +1,700 @@
+
+body{
+	background: #000000;
+	margin: 0;
+}
+
+.container{
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* Header */
+
+.header{
+
+}
+
+
+.header__contacts {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#969696;
+    font-family: PT Sans;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.contacts__info{
+	display: flex;
+	margin-left: -55px;
+}
+
+.nav__info{
+	border-right: 1px solid black;
+	margin: 0 15px; 
+	list-style-type: none;
+}
+
+.contacts__nav{
+	display: flex;
+}
+
+.nav__gate{
+	text-decoration:none;
+	color:#969696;
+	font-size: 12px;
+	line-height: 16px;
+	align-items: center;
+	margin-left: 14px;
+}
+
+.nav__gate:first-child {
+	border-right: 1px solid black;
+}
+
+.header__link{
+
+	width: 100%;
+    background: #0F0F0F;
+}
+
+.header__link.fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+
+
+    z-index: 1;
+}
+
+
+.header__navigation{
+	margin: 0 auto;
+	max-width: 1280px;
+	display: flex;
+}
+
+.header__Logo{
+	position: relative;
+	font-size: Post No Bills Jaffna;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	width: 50%;
+	margin: 15px 0px;
+	font-size: 36px;
+}
+
+.navigation__nav{
+	width: 50%;
+	display: flex;
+}
+
+.nav__link{
+	height: 100%;
+	text-decoration:none;
+	color:#969696;
+	font-size: 12px;
+	line-height: 18px;
+	margin: 0 auto;
+	width: 100%;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition: background .2s linear;
+}
+
+
+.nav__link:hover{
+	background: #1F1F1F;
+}
+
+.nav__img{
+	text-decoration: none;
+    color: #969696;
+    font-size: 12px;
+    line-height: 16px;
+    align-items: center;
+	display: flex;
+	margin-left: 25px;
+}
+
+/* Burger */
+.burger {
+    display: none;
+    padding: 9px 2px;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.burger__item {
+    display: block;
+    width: 28px;
+    height: 3px;
+
+    background-color: #fff;
+
+    font-size: 0;
+    color: transparent;
+
+    position: relative;
+}
+
+.burger__item:before,
+.burger__item:after {
+    content: "";
+    height: 100%;
+
+    background-color: #fff;
+
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.burger__item:before {
+    width: 30px;
+    top: -8px;
+}
+
+.burger__item:after {
+    width: 26px;
+    bottom: -8px;
+}
+
+
+/*Section*/
+
+.section__logo{
+	width: 100%;
+	background: url("img/body__logo.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.logo__inner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.square__title{
+	width: 320px;
+	height: 320px;
+	border: 4px solid #FFFFFF;
+	margin: 0 auto;
+	font-size: Post No Bills Jaffna;
+	color: #FFFFFF;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 160px 0 80px;
+}
+
+.logo__title{
+	font-family: Post No Bills Jaffna;
+	box-sizing: border-box;
+	font-size: 68px;
+	line-height: 16px;
+	text-align: center;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.logo__title:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #FFFFFF;
+	margin: 25px auto 6px;
+}
+
+.logo__subtitle{
+	font-family: PT Sans;
+	font-size: 21px;
+	line-height: 28px;
+	text-transform: uppercase;
+}
+
+.logo__text{
+	width: 730px;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	color: #FFFFFF
+}
+
+.section__collection{
+
+}
+
+.collection__item{
+	color: #FFFFFF;
+	display: flex;
+	flex-wrap: wrap;
+	height: 1330px;
+	margin: 0;
+}
+
+
+.collection__items1{
+	color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 54%;
+	width: 54%;
+}
+
+.title__products{
+	font-family: Playfair Display;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 48px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 80px;
+}
+
+.title__products:after{
+	content: "";
+	display: block;
+	width: 120px;
+	height: 1px;
+	background: #FFFFFF;
+	margin: 50px 90px;
+}
+
+.catalog__products{
+	max-width: 100%;
+	display: flex;
+}
+
+.products{
+	background: #191B1C;
+	width: 260px;
+	height: 325px;
+	margin: 0 25px;
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	position: relative;
+}
+
+.products img{
+	margin: 5% 10% 20%;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.description{
+	position: absolute;
+	bottom: -100px;
+}
+
+.description p{
+	font-family: Playfair Display;
+}
+
+.collection__items2{
+	background: url("img/2 block man.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+	height: 54%;
+	width: 46%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.title__items2{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 48px;
+}
+
+.title__items2:after{
+	content: "";
+	display: block;
+	width: 120px;
+	height: 1px;
+	background: #FFFFFF;
+	margin: 20px auto 30px;
+}
+
+.button__items2 {
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 23px;
+	margin: 0 0 110px 0;
+	border: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	padding: 12px 28px;
+	color: #FFFFFF;
+
+	transition: background-color .2s linear;
+}
+
+.button__items2:hover {
+	background-color: #FFFFFF;
+	color: #000;
+	text-decoration-color: #000;
+}
+
+.button__items2:hover .button__active{
+	color: #000;
+}
+
+.button__items2 a{
+	text-decoration:none;
+	color: #FFFFFF;
+}
+
+.collection__items3{
+	background: url("img/3blockMan.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+	height: 46%;
+	width: 46%;
+}
+
+.collection__items4{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	height: 46%;
+	width: 54%;
+}
+
+.title__items4{
+	font-size: 36px;
+	line-height: 48px;
+	text-transform: uppercase;
+	margin-top: 100px;
+}
+
+.title__items4:after{
+	content: "";
+	display: block;
+	width: 120px;
+	height: 1px;
+	background: #FFFFFF;
+	margin: 40px 90px;
+}
+
+.text__items4{
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	width: 470px;
+}
+
+.button__items4{
+	background-color: #000;
+
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 23px;
+	text-align: center;
+	width: 300px;
+	text-transform: uppercase;
+	margin: 70px 0 100px;
+	border: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	padding: 12px 28px;
+
+	transition: background-color .2s linear;
+}
+
+.button__items4:hover {
+	background-color: #FFFFFF;
+
+}
+
+.button__items4:hover .button__active{
+	color: #000;
+}
+
+.button__items4 a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+
+/*main__products*/
+
+.main__product{
+
+}
+
+.main__inner{
+
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.product__title{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 48px;
+	margin-top: 120px ;
+}
+
+.product__title:after{
+	content: "";
+	display: block;
+	width: 120px;
+	height: 1px;
+	background: #FFFFFF;
+	margin: 40px 160px 80px;
+}
+
+.main__catalog{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.product__catalog{
+	position: relative;
+	background: #191B1C;
+	width: 290px;
+	height: 300px;
+	margin: 0 23px 120px 0;
+}
+
+.product__catalog:nth-child(4),
+:nth-child(8){
+	margin-right: 0;
+}
+
+.product__catalog:nth-child(n+5){
+	margin-bottom: 230px;
+}
+
+.product__catalog img{
+	position: absolute;
+	top: 18%;
+	left: 8%;
+}
+
+/*brends*/
+
+.brends{
+	background: #0F0F0F;
+}
+
+.brends__inner{
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.brends__title{
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 60px 0 0 0;
+}
+
+.brends__title:after{
+	content: "";
+	display: block;
+	width: 120px;
+	height: 1px;
+	background: #FFFFFF;
+	margin: 40px 85px;
+}
+
+.brends__type{
+	display: flex;
+}
+
+.brends__type img{
+	width: 25%;
+}
+
+.brend__item{
+
+	width: 25%;
+	margin: 0 15px 80px;
+}
+
+
+.brend__item:last-child{
+	margin-right: 0;
+}
+
+/*about*/
+
+.about{
+	height: 400px;
+
+	background: url("img/about.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.about__inner{
+
+	color: #FFFFFF;
+	margin: 0 auto;
+	display: flex;
+}
+
+.about__magazine{
+	width: 33.333%;
+	margin: 80px 60px 0 0;
+}
+
+.magazine__title{
+	font-size: 24px;
+	line-height: 32px;
+	text-transform: uppercase;
+}
+
+.magazine__text{
+	margin: 40px 0 100px;
+	font-size: 14px;
+	line-height: 150%;
+}
+
+.about__category{
+	width: 33.333%;
+	margin: 80px 60px 0 0;
+}
+
+.category__title{
+	font-size: 24px;
+	line-height: 32px;
+	text-transform: uppercase;
+}
+
+.about__items{
+	max-width: 350px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 40px 0 140px;
+
+}
+
+.category__item{
+	color: #D0D0D0;
+	font-size: 14px;
+	line-height: 150%;
+	margin: 0 20px 20px 0;
+	padding: 10px 20px;
+	background-color: #0F0F0F;
+}
+
+.category__item a{
+	text-decoration: none;
+	color: #D0D0D0;
+}
+
+.about__mail{
+	width: 33.333%;
+	margin: 80px 0 0 0;
+}
+
+.about__form{
+
+}
+
+.subscribe{
+	margin: 35px 0 125px;
+
+	display: flex;
+}
+
+.subscribe__input{
+	text-align: justify-all;
+	padding: 0 0 0 10px;
+	border: 0;
+	height: 42px;
+	background: rgba(255, 255, 255, 0.4);
+	color: #FFFFFF;
+	width: 60%;
+	outline:none;
+}
+
+input::-webkit-input-placeholder {color: #969696;}
+input::-moz-placeholder {color: #969696;}
+
+.subscribe__btn{
+	background: #000000;
+	color: #FFFFFF;
+	height: 42px;
+	text-transform: uppercase;
+	padding: 0 auto;
+	border: 0;
+	width: 40%;
+}
+
+.mail__title{
+	font-size: 24px;
+	line-height: 32px;
+	text-transform: uppercase;
+}
+
+.mail__text{
+	margin: 40px 0 0 0;
+	font-size: 14px;
+	line-height: 150%;
+}
+
+/*footer*/
+
+.footer__inner{
+	font-size: 12px;
+	line-height: 16px;
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer__item{
+	margin: 17px 0;
+}
+
+@media (max-width: 1280px) {
+
+}
+
+
+@media (max-width: 991px) {
+
+}
+
+
+@media (max-width: 767px) {
+
+}
+
+
+@media (max-width: 414px) {
+
+}
